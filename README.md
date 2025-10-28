@@ -4,21 +4,20 @@
 
 <br />
 
-## 폴더 구성
+## 0. 폴더 구성
 
------------------
+```
 morai-zed-landmark/
 │
 ├── demo.py              # 메인 데모 코드
 ├── setup_env.bat        # 환경 설정 스크립트
 ├── run.bat              # 실행 스크립트
 └── requirements.txt     # 필요한 Python 라이브러리 목록
+```
 
-<br />
+---
 
 ## 1. 설치 준비
-
------------------
 
 ### 필수 프로그램
 - **Python 3.12 (64bit)**  
@@ -32,10 +31,11 @@ morai-zed-landmark/
     C:\Program Files\ZED SDK
     C:\Program Files (x86)\ZED SDK
     ```
+  
+---
 
 ## 2. 환경 세팅 (최초 1회만 실행)
 
------------------
 1. setup_env.bat 더블클릭 실행
 
    자동으로 아래 작업이 수행됩니다.
@@ -51,20 +51,21 @@ morai-zed-landmark/
 ⚠️ 설치가 중간에 꺼진다면
    setup_env.bat을 관리자 권한으로 다시 실행해주세요.
 
-<br />
+---
 
 ## 3. 데모 실행 (ZED 카메라 / SVO 파일)
 
------------------
+```
 1. ZED 카메라를 PC에 연결합니다.
 2. run.bat을 더블클릭합니다.
 3. ZED 카메라가 실시간으로 표시됩니다.
    종료하려면 ESC 또는 Q 키를 누르세요.
+```
 
-<br />
+---
 
-참고 명령어 (선택적)
------------------
+## 4. 참고 명령어 (선택적)
+
 ```
 venv\Scripts\activate 
 python demo.py --mode zed
