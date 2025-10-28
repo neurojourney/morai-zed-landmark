@@ -6,7 +6,7 @@ echo   Morai ZED Demo Environment Setup
 echo ======================================
 
 echo [STEP 1] Create virtual environment
-py -3.12 -m venv venv
+python -m venv venv
 if errorlevel 1 (
     echo [ERROR] Failed to create venv.
     pause
