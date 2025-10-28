@@ -1,3 +1,6 @@
+@echo off
+setlocal enabledelayedexpansion
+
 echo ======================================
 echo   Morai ZED Demo Environment Setup
 echo ======================================

@@ -51,6 +51,19 @@ morai-zed-landmark/
 ⚠️ 설치가 중간에 꺼진다면
    setup_env.bat을 관리자 권한으로 다시 실행해주세요.
 
+3. 배치파일 동작이 어려운 경우 명령어 리스트
+```
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+venv/Scripts/activate
+
+python -m pip install --upgrade pip
+ 
+pip install -r requirements.txt
+
+python C:\"Program Files (x86)"\"ZED SDK"\get_python_api.py
+```
+
 ---
 
 ## 3. 데모 실행 (ZED 카메라 / SVO 파일)
@@ -67,8 +80,29 @@ morai-zed-landmark/
 ## 4. 참고 명령어 (선택적)
 
 ```
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 venv\Scripts\activate 
 python demo.py --mode zed
 python demo.py --mode svo --svo data/sample.svo
 ```
 
+---
+
+## 5. 터미널용
+
+### 1) 셋업
+```
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+py -3.12 -m venv venv
+venv/Scripts/activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+python C:\"Program Files (x86)"\"ZED SDK"\get_python_api.py
+```
+
+### 2) 실행
+```
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+venv\Scripts\activate 
+python demo.py --mode zed
+```
